@@ -2,7 +2,7 @@
 
 > **An integrated HCI platform based on ESP32-S3 and BiometricMotion algorithms.**
 
-[中文版 README](./README_zh.md)
+[中文版 README (Chinese Version)](./README_zh.md)
 
 ---
 
