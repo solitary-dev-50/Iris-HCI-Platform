@@ -1,80 +1,81 @@
 # Iris-HCI-Platform: The Multimodal Interaction Brain
 
-> **An integrated HCI platform based on ESP32-S3 and BiometricMotion algorithms.**  
-> (基于ESP32-S3和仿生运动算法的集成人机交互平台)
+> **An integrated HCI platform based on ESP32-S3 and BiometricMotion algorithms.**
+
+[中文版 README](./README_zh.md)
 
 ---
 
-## 🚀 核心定位 / Product Positioning
-**Iris-HCI** 是一款高度集成的智能终端主板，专为“即时反馈”与“拟人化交互”而生。它集成了视觉识别、声音感知与仿生运动算法，是一个可以赋予机械以“生命感”的核心大脑。
+## 🚀 Product Positioning
+**Iris-HCI** is a highly integrated smart terminal mainboard designed for "instant feedback" and "humanized interaction". It integrates visual recognition, audio perception, and biometric motion algorithms - a core brain that can give machinery a sense of "life".
 
 ---
 
-## 🛠 硬核超能力 / Core Features
+## 🛠 Core Features
 
-### 1. 视觉感知 (Vision)
-- **OV5640-AF**: 500万像素自动对焦镜头。
-- **能力**: 识别距离变化、追踪手势动作、诊断细节（如植物病斑或精细操作）。
+### 1. Vision Perception
+- **OV5640-AF**: 5MP autofocus camera module.
+- **Capabilities**: Distance detection, gesture tracking, detail diagnosis (e.g., plant disease spots or precision operations).
 
-### 2. 声音感知 (Audio)
-- **IM69D130**: 专业级数字麦克风。
-- **能力**: 实时分析环境音、声源定位、让机械随声音节奏起舞。
+### 2. Audio Perception
+- **IM69D130**: Professional-grade digital microphone.
+- **Capabilities**: Real-time environmental sound analysis, sound source localization, rhythm-synchronized motion.
 
-### 3. 仿生运动 (Biometric Motion)
-- **BiometricMotion 算法库**: 
-  - **S-Curve**: 拒绝机械式生硬跳变，模拟肌肉般的柔顺运动。
-  - **Perlin Noise**: 为待机赋予“呼吸感”微动，让设备看起来是“活的”。
+### 3. Biometric Motion
+- **BiometricMotion Algorithm Library**: 
+  - **S-Curve**: Eliminates mechanical jerky movements, simulating muscle-like smooth motion.
+  - **Perlin Noise**: Adds "breathing" micro-movements during idle states, making devices appear "alive".
 
-### 4. 工业级稳定性 (Stability)
-- 源自**“基石智慧农业”**的底层代码，具备 5 阶段启动自检、Fail-safe 故障保护、电源隔离防护。
-
----
-
-## 📂 适用场景 / Use Cases
-- **智能交互设备 (HCI)**: 实现懂节奏、有反馈的高级触觉体验。
-- **仿生机器人 (Robotics)**: 作为机器人的视觉与动作控制中心。
-- **智能诊断终端**: 配合 API 实现图像识别与远程分析。
+### 4. Industrial-Grade Stability
+- Built on the foundation of **"Cornerstone Smart Agriculture"** codebase, featuring 5-stage startup self-check, fail-safe protection, and power isolation safeguards.
 
 ---
 
-## 📐 硬件架构深度解析 / Technical Architecture Details
-
-本项目硬件设计遵循“高可靠性、低噪声、多模态交互”原则。以下为核心电路规格：
-
-### 1. 卓越的电源管理链路 (Power Path Management)
-- **多源自动切换**: 采用双 AO3401A (PMOS) 逻辑电路，实现 USB 供电与锂电池供电的无缝切换。
-- **三重保护**: 
-  - 采用 **SS34 肖特基二极管** 进行反向电流隔离。
-  - USB 输入端集成 **SRV05-4HTG-D** ESD 保护芯片，防止静电击穿。
-  - 板载自恢复保险丝，确保极端情况下的主板安全。
-- **高效能转换**: 
-  - **MT3608 DCDC**: 为舵机与灯组提供稳定的 5V 动力，设计负载建议达 2A，确保大电流动作不掉电。
-  - **AMS1117-3.3**: 为核心 SoC 提供纯净电压。
-
-### 2. 高保真数字音频链路 (Audio Processing Chain)
-- **顶级传感器**: 采用 **IM69D130** 高性能 PDM 数字麦克风。
-- **信号转换**: 通过 **PCM1840IRTWR** (高性能四路 ADC/PDM 转 I2S) 芯片，将数字信号直接输入 ESP32-S3，避开模拟干扰，实现高信噪比采样。
-- **音频输出**: 集成 **NS4168** 单声道音频功放，支持高效率音频驱动。
-
-### 3. 专业级视觉系统 (Computer Vision)
-- **高速接口**: 采用 24-Pin FPC DVP 接口与 **OV5640-AF** (500W像素自动对焦) 连接。
-- **独立供电**: 为摄像头模组设计了专用的 LDO (LDO-2V8 & LDO-1V5)，最大限度减少图像噪点。
-
-### 4. 扩展性与交互 (IO & Interface)
-- **高集成度**: 集成双路灯组接口 (WS2812B-2020 & 4020)、0.96寸 OLED 接口、双路舵机接口。
-- **调试便捷**: 板载 **CH340C** 串口转换芯片，支持全自动下载与硬件流控。
-- **电量监测**: 设计了基于 100K/100K 精密电阻的分压采样电路，支持实时锂电池电压监测。
+## 📂 Use Cases
+- **Smart Interactive Devices (HCI)**: Achieve rhythm-aware, feedback-rich advanced tactile experiences.
+- **Biometric Robots**: Serve as the vision and motion control center for robots.
+- **Smart Diagnostic Terminals**: Integrate with APIs for image recognition and remote analysis.
 
 ---
 
-## 📖 开发者寄语 / Developer's Words
-我是一个 50 岁的开发者。这个终端主板凝聚了我半年的心血——从农业控制的严苛环境中磨炼出来的稳定性，现在被我浓缩进了这块不到 10cm 的电路板里。
+## 📐 Technical Architecture Details
 
-**代码是由 AI 协助生成的，但逻辑、灵魂与对稳定性的死磕，源自我作为一个老农对土地和生命的敬畏。**
+This hardware design follows the principles of "high reliability, low noise, multimodal interaction". Core circuit specifications:
+
+### 1. Advanced Power Path Management
+- **Multi-source Auto-switching**: Dual AO3401A (PMOS) logic circuit for seamless USB and Li-ion battery power switching.
+- **Triple Protection**: 
+  - **SS34 Schottky diode** for reverse current isolation.
+  - **SRV05-4HTG-D** ESD protection chip on USB input.
+  - Onboard self-recovery fuse for extreme condition safety.
+- **High-efficiency Conversion**: 
+  - **MT3608 DCDC**: Provides stable 5V power for servos and LED arrays, designed for 2A load capacity.
+  - **AMS1117-3.3**: Delivers clean voltage for the core SoC.
+
+### 2. High-fidelity Digital Audio Chain
+- **Premium Sensor**: **IM69D130** high-performance PDM digital microphone.
+- **Signal Conversion**: **PCM1840IRTWR** (quad-channel ADC/PDM to I2S) chip converts digital signals directly to ESP32-S3, avoiding analog interference for high SNR sampling.
+- **Audio Output**: Integrated **NS4168** mono audio amplifier for efficient audio driving.
+
+### 3. Professional Vision System
+- **High-speed Interface**: 24-Pin FPC DVP interface connected to **OV5640-AF** (5MP autofocus).
+- **Dedicated Power**: Specialized LDO (LDO-2V8 & LDO-1V5) for camera module to minimize image noise.
+
+### 4. Expandability & Interaction
+- **High Integration**: Dual LED array interfaces (WS2812B-2020 & 4020), 0.96" OLED interface, dual servo interfaces.
+- **Debug Convenience**: Onboard **CH340C** serial converter chip supporting automatic download and hardware flow control.
+- **Battery Monitoring**: Precision 100K/100K resistor voltage divider circuit for real-time Li-ion battery voltage monitoring.
 
 ---
 
-## 🤝 联系与合作 / Contact
-- **GitHub Star**: 如果你认可这种极致的硬件集成，请点亮星星。
-- **合作开发**: 欢迎极客玩家洽谈关于主板方案授权、固件定制的合作。
-- **赞助支持**: [此处可填入你的爱发电链接]
+## 📖 Developer's Words
+I'm a 50-year-old developer. This terminal mainboard embodies six months of my dedication - the stability forged from the harsh environments of agricultural control, now condensed into this circuit board less than 10cm in size.
+
+**The code is AI-assisted, but the logic, soul, and relentless pursuit of stability come from my reverence for the land and life as an old farmer.**
+
+---
+
+## 🤝 Contact & Collaboration
+- **GitHub Star**: If you appreciate this level of hardware integration, please star this project.
+- **Development Collaboration**: Geeks and developers are welcome to discuss mainboard solution licensing and firmware customization.
+- **Sponsorship**: [Add your sponsorship link here]
