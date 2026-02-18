@@ -78,4 +78,4 @@ I'm a 50-year-old developer. This terminal mainboard embodies six months of my d
 ## 🤝 Contact & Collaboration
 - **GitHub Star**: If you appreciate this level of hardware integration, please star this project.
 - **Development Collaboration**: Geeks and developers are welcome to discuss mainboard solution licensing and firmware customization.
-- **Sponsorship**: [Add your sponsorship link here]
+- **Sponsorship**: https://afdian.com/a/solitary-dev-50
