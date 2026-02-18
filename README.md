@@ -1,6 +1,9 @@
-# Iris-HCI-Platform
-An integrated HCI platform based on ESP32-S3 and BiometricMotion algorithms.（基于ESP32-S3和仿生运动算法的集成人机交互平台）。
 # Iris-HCI-Platform: The Multimodal Interaction Brain
+
+> **An integrated HCI platform based on ESP32-S3 and BiometricMotion algorithms.**  
+> (基于ESP32-S3和仿生运动算法的集成人机交互平台)
+
+---
 
 ## 🚀 核心定位 / Product Positioning
 **Iris-HCI** 是一款高度集成的智能终端主板，专为“即时反馈”与“拟人化交互”而生。它集成了视觉识别、声音感知与仿生运动算法，是一个可以赋予机械以“生命感”的核心大脑。
