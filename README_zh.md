@@ -91,6 +91,14 @@ pio test -f algorithm_tests/test_motion_curve
 
 ---
 
+## 📜 商用授权
+
+**Commercial Use**: This project is licensed under MIT for individual/educational use only. Any commercial production, distribution, or resale of the hardware/firmware requires a written license from the author.
+
+**商用授权**：本项目仅供个人和教学使用。任何形式的商业生产、分销或转售，必须获得作者的正式书面授权。
+
+---
+
 ## 🤝 联系与合作
 - **GitHub Star**: 如果你认可这种极致的硬件集成，请点亮星星。
 - **合作开发**: 欢迎极客玩家洽谈关于主板方案授权、固件定制的合作。

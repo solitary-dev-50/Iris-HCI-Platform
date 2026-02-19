@@ -91,6 +91,12 @@ I'm a 50-year-old developer. This terminal mainboard embodies six months of my d
 
 ---
 
+## 📜 Commercial Use
+
+**Commercial Use**: This project is licensed under MIT for individual/educational use only. Any commercial production, distribution, or resale of the hardware/firmware requires a written license from the author.
+
+---
+
 ## 🤝 Contact & Collaboration
 - **GitHub Star**: If you appreciate this level of hardware integration, please star this project.
 - **Development Collaboration**: Geeks and developers are welcome to discuss mainboard solution licensing and firmware customization.
