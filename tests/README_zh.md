@@ -2,7 +2,7 @@
 
 此目录用于存放单元测试、属性测试和硬件功能测试。
 
-[English Version](./README_en.md)
+[English Version](./README.md)
 
 ## 文件夹结构
 
