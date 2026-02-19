@@ -54,6 +54,13 @@ This property-based test validates the mathematical correctness of our bio-inspi
 
 ---
 
+## 🌍 Protocol & Ecosystem
+
+> **Designed for next-gen interactive immersion.**  
+> Our firmware is **fully compatible with the T-Code protocol** and offers **seamless integration with the Buttplug.io (Intiface) ecosystem**.
+
+---
+
 ## 📐 Technical Architecture Details
 
 This hardware design follows the principles of "high reliability, low noise, multimodal interaction". Core circuit specifications:
