@@ -2,7 +2,7 @@
 
 This directory contains unit tests, property-based tests, and hardware functional tests.
 
-[中文版 (Chinese Version)](./README.md)
+[中文版 (Chinese Version)](./README_zh.md)
 
 ## Folder Structure
 
