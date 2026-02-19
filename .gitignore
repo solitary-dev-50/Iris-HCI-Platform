@@ -1,0 +1,32 @@
+# Temporary files directory
+临时文件/
+
+# Kiro IDE directory
+.kiro/
+
+# PlatformIO
+.pio/
+.vscode/
+.pioenvs/
+.piolibdeps/
+
+# Build artifacts
+*.o
+*.a
+*.elf
+*.bin
+*.hex
+
+# IDE
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log

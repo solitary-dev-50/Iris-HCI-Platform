@@ -25,9 +25,24 @@
 - **BiometricMotion Algorithm Library**: 
   - **S-Curve**: Eliminates mechanical jerky movements, simulating muscle-like smooth motion.
   - **Perlin Noise**: Adds "breathing" micro-movements during idle states, making devices appear "alive".
+- **Testing Excellence**: Unlike traditional testing, we use Property-Based Testing (100+ iterations per property) to ensure the mathematical correctness of our bio-inspired curves.
 
 ### 4. Industrial-Grade Stability
 - Built on the foundation of **"Cornerstone Smart Agriculture"** codebase, featuring 5-stage startup self-check, fail-safe protection, and power isolation safeguards.
+- **Quality Assurance**: 50+ test cases verified. Check our [Test Directory](./tests/README.md) for detailed reports.
+
+---
+
+## ⚡ Quick Start (Verification)
+
+If you have **PlatformIO** installed, you can verify our core BiometricMotion algorithm with one command:
+
+```bash
+# Run the S-Curve mathematical correctness test (100+ iterations)
+pio test -f algorithm_tests/test_motion_curve
+```
+
+This property-based test validates the mathematical correctness of our bio-inspired motion curves across 100+ randomly generated scenarios.
 
 ---
 
@@ -35,6 +50,7 @@
 - **Smart Interactive Devices (HCI)**: Achieve rhythm-aware, feedback-rich advanced tactile experiences.
 - **Biometric Robots**: Serve as the vision and motion control center for robots.
 - **Smart Diagnostic Terminals**: Integrate with APIs for image recognition and remote analysis.
+- **Protocol & Ecosystem**: Fully compatible with the T-Code v0.3 standard. It integrates seamlessly with major haptic control frameworks such as Buttplug.io (Intiface), enabling low-latency synchronization with interactive media and remote haptic applications.
 
 ---
 
@@ -78,4 +94,4 @@ I'm a 50-year-old developer. This terminal mainboard embodies six months of my d
 ## 🤝 Contact & Collaboration
 - **GitHub Star**: If you appreciate this level of hardware integration, please star this project.
 - **Development Collaboration**: Geeks and developers are welcome to discuss mainboard solution licensing and firmware customization.
-- **Sponsorship**: https://afdian.com/a/solitary-dev-50
+- **Sponsorship**: [Support my development on Afdian](https://afdian.com/a/solitary-dev-50)
